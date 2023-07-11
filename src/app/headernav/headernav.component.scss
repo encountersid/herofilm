@@ -1,0 +1,45 @@
+$header-height: 60px;
+$header-bg-color: #333;
+$header-text-color: #fff;
+
+$nav-link-margin: 0 10px;
+
+header {
+  height: $header-height;
+  background: linear-gradient(to right,white 0%, grey 50%,grey 100%);
+  padding: 10px;
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $header-text-color;
+    
+    .logo {
+      color: red;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 30px;
+    }
+   
+    .nav-links {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      
+      li {
+        margin-right: $nav-link-margin;
+        
+        a {
+          color: $header-text-color;
+          text-decoration: none;
+          font-size: 30px;
+          &:hover {
+            background-color: red;
+          }
+        }
+      }
+    }
+  }
+}
