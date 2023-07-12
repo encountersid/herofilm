@@ -1,0 +1,47 @@
+$header-height: 70px;
+$header-bg-color: #333;
+$header-text-color: #fff;
+
+$nav-link-margin: 0 10px;
+
+header {
+  height: $header-height;
+  background: linear-gradient(to right,white 50%, grey 50%);
+  padding: 10px;
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $header-text-color;
+    border-radius: 25px;
+    
+    .logo {
+      
+      background-image: url('/assetsimages/herologo.jpg');
+      background-size: contain; /* Adjust the background size as needed */
+      width: 200px; 
+       height: 100px;
+    }
+   
+    .nav-links {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      
+      li {
+        margin-right: $nav-link-margin;
+        
+        a {
+          color: $header-text-color;
+          text-decoration: none;
+          font-size: 30px;
+          &:hover {
+            background-color: red;
+          }
+        }
+      }
+    }
+  }
+}
